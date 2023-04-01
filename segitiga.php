@@ -19,12 +19,12 @@ class Segitiga extends Bentuk2D
 
     public function luasBidang()
     {
-        return 0.5 * $this->alas * $this->tinggi;
+        return round(0.5 * $this->alas * $this->tinggi, 2) . ' cm2';
     }
 
     public function kelilingBidang()
     {
         $sisiMiring = sqrt(pow($this->alas / 2, 2) + pow($this->tinggi, 2));
-        return 2 * $sisiMiring + $this->alas;
+        return round(2 * $sisiMiring + $this->alas, 2) . ' cm';
     }
 }

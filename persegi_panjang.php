@@ -19,11 +19,11 @@ class PersegiPanjang extends Bentuk2D
 
     public function luasBidang()
     {
-        return $this->panjang * $this->lebar;
+        return round($this->panjang * $this->lebar, 2) . ' cm2';
     }
 
     public function kelilingBidang()
     {
-        return 2 * ($this->panjang + $this->lebar);
+        return round(2 * ($this->panjang + $this->lebar), 2) . ' cm';
     }
 }

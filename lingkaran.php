@@ -17,11 +17,11 @@ class Lingkaran extends Bentuk2D
 
     public function luasBidang()
     {
-        return pi() * pow($this->jari2, 2);
+        return round(pi() * pow($this->jari2, 2), 2) . ' cm2';
     }
 
     public function kelilingBidang()
     {
-        return 2 * pi() * $this->jari2;
+        return round(2 * pi() * $this->jari2, 2) . ' cm';
     }
 }
