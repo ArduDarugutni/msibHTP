@@ -19,24 +19,23 @@
 <body>
 
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row mt-4">
 			<div class="col-md-12">
-				<nav class="navbar navbar-toggleable-md navbar-light bg-light" style="background-color: silver;">
+				<nav id="back" class="navbar navbar-toggleable-md navbar-light bg-light main-nav fixed-top" ">
 
-					<button class="navbar-toggler" type="button" data-toggle="collapse"
-						data-target="#bs-example-navbar-collapse-1">
-						<span class="navbar-toggler-icon"></span>
+					<button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="navbar-toggler-icon"></span>
 					</button>
 					<img alt="Bootstrap Image Preview" src="img/logo1.png" style="max-width: 200px;">
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 						<ul class="navbar-nav ml-md-auto">
 							<li class="nav-item active">
-								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+								<a class="nav-link" id="font" href="#">Home <span class="sr-only">(current)</span></a>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com"
-									id="navbarDropdownMenuLink" data-toggle="dropdown">Dunia</a>
+									id="navbarDropdownMenuLink" data-toggle="dropdown" style="color: white;">Dunia</a>
 								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 									<a class="dropdown-item" href="#">Action</a> <a class="dropdown-item"
 										href="#">Another action</a> <a class="dropdown-item" href="#">Something else
@@ -47,7 +46,7 @@
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com"
-									id="navbarDropdownMenuLink" data-toggle="dropdown">Eropa</a>
+									id="navbarDropdownMenuLink" data-toggle="dropdown" style="color: white;">Eropa</a>
 								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 									<a class="dropdown-item" href="#">Action</a> <a class="dropdown-item"
 										href="#">Another action</a> <a class="dropdown-item" href="#">Something else
@@ -58,7 +57,8 @@
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com"
-									id="navbarDropdownMenuLink" data-toggle="dropdown">Indonesia</a>
+									id="navbarDropdownMenuLink" data-toggle="dropdown"
+									style="color: white;">Indonesia</a>
 								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 									<a class="dropdown-item" href="#">Action</a> <a class="dropdown-item"
 										href="#">Another action</a> <a class="dropdown-item" href="#">Something else
@@ -69,7 +69,8 @@
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="http://example.com"
-									id="navbarDropdownMenuLink" data-toggle="dropdown">Jadwal & Skor</a>
+									id="navbarDropdownMenuLink" data-toggle="dropdown" style="color: white;">Jadwal &
+									Skor</a>
 								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 									<a class="dropdown-item" href="#">Action</a> <a class="dropdown-item"
 										href="#">Another action</a> <a class="dropdown-item" href="#">Something else
@@ -83,12 +84,12 @@
 				</nav>
 			</div>
 		</div>
-		<div class="row mt-3">
-			<div class="col-md-4">
-				<img alt="Bootstrap Image Preview" src="img/logo1.png" style="max-width: 400px;">
+		<div class="row mt-5">
+			<div class="col-md-3 mt-2">
+				<img alt="Bootstrap Image Preview" src="img/logo1.png" style="max-width: 300px;">
 			</div>
-			<div class="col-md-8">
-				<img alt="Bootstrap Image Preview" src="img/logo2.jpg" style="width: 100%;">
+			<div class="col-md-9 mt-2">
+				<img class="radius" alt="Bootstrap Image Preview" src="img/logo2.jpg" style=" width: 100%;">
 			</div>
 		</div><br><br>
 		<h2 align="center">Kabar Trending</h2><br>
@@ -272,6 +273,17 @@
 							Nested media heading
 						</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
 						commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+						<div class="media mt-3">
+							<a class="pr-3" href="#"><img alt="Bootstrap Media Another Preview"
+									src="https://www.layoutit.com/img/sports-q-c-64-64-2.jpg"></a>
+							<div class="media-body">
+								<h5 class="mt-0">
+									Nested media heading
+								</h5> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+								sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra
+								turpis.
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -1,1 +1,12 @@
-# Empty CSS file for your own CSS
+#back {
+    background-color: #2e3136;
+}
+
+.radius {
+    border-radius: 5px;
+
+}
+
+#font {
+    color: white;
+}
