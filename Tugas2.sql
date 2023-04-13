@@ -1,5 +1,5 @@
 -- Soal 2.1
--- 1.	Download https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v3.8.9
+-- 1.	Download beekeeper
 -- 2.	Tampilkan seluruh data produk diurutkan berdasarkan harga_jual mulai dari yang termahal
 SELECT * FROM produk ORDER BY harga_jual DESC;
 -- 3.	Tampilkan data kode, nama, tmp_lahir, tgl_lahir dari table pelanggan
@@ -37,9 +37,9 @@ SELECT * FROM produk WHERE nama LIKE 'TV%';
 -- 4.	Tampilkan pelanggan mengandung huruf 'SA'
 SELECT * FROM pelanggan WHERE nama_pelanggan LIKE '%SA%';
 -- 5.	Tampilkan pelanggan yang lahirnya bukan di Jakarta dan mengandung huruf ‘yo‘
-SELECT * FROM pelanggan WHERE tmp_lahir NOT LIKE 'jakarta' AND tmp_lahir LIKE "%yo%";
+SELECT * FROM pelanggan WHERE tmp_lahir NOT LIKE 'Jakarta%' AND nama_pelanggan LIKE "%yo%";
 -- 6.	Tampilkan pelanggan yang karakter huruf ke – 2 nya adalah A
-SELECT * FROM pelanggan WHERE SUBSTR(nama_pelanggan, 2, 1) = 'A';
+SELECT * FROM pelanggan WHERE nama_pelanggan LIKE '_A%';
 
 -- SOAL 2.4
 -- 1.	Tampilkan 2 data produk termahal
