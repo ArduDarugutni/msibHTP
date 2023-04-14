@@ -107,5 +107,4 @@
     WHERE id_pelanggan IN (
         SELECT id_pelanggan
         FROM kartu
-        WHERE diskon > 0.03
-    );
+        WHERE diskon > 0.03);
