@@ -4,9 +4,9 @@
 $model = new Produk();
 $data_produk = $model->dataProduk();
 
-// foreach ($data_produk as $row){    
-//     print $row['kode'];
-// }
+foreach ($data_produk as $row) {
+    print $row['kode'];
+}
 
 ?>
 <h1 class="mt-4">Tables</h1>
@@ -55,24 +55,24 @@ $data_produk = $model->dataProduk();
             <tbody>
                 <?php
                 $no = 1;
-                foreach ($data_produk as $row){
+                foreach ($data_produk as $row) {
 
                 ?>
-                <tr>
-                    <td><?= $no ?></td>
-                    <td><?= $row['kode']?></td>
-                    <td><?= $row['nama']?></td>
-                    <td><?= $row['harga_beli']?></td>
-                    <td><?= $row['harga_jual']?></td>
-                    <td><?= $row['stok']?></td>
-                    <td><?= $row['min_stok']?></td>
-                    <td><?= $row['jenis_produk_id']?></td>
-                </tr>
+                    <tr>
+                        <td><?= $no ?></td>
+                        <td><?= $row['kode'] ?></td>
+                        <td><?= $row['nama'] ?></td>
+                        <td><?= $row['harga_beli'] ?></td>
+                        <td><?= $row['harga_jual'] ?></td>
+                        <td><?= $row['stok'] ?></td>
+                        <td><?= $row['min_stok'] ?></td>
+                        <td><?= $row['jenis_produk_id'] ?></td>
+                    </tr>
                 <?php
-                $no++;
-                } 
+                    $no++;
+                }
                 ?>
-                
+
             </tbody>
         </table>
     </div>

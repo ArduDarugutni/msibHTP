@@ -1,5 +1,6 @@
 <?php
-class Pelanggan{
+class Pelanggan
+{
     private $koneksi;
     public function __construct()
     {
@@ -16,5 +17,3 @@ class Pelanggan{
         return $rs;
     }
 }
-
-?>
