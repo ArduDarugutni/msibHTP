@@ -1,5 +1,6 @@
 <?php
-class Kartu{
+class Kartu
+{
     private $koneksi;
     public function __construct()
     {
@@ -14,20 +15,32 @@ class Kartu{
         $rs = $ps->fetchAll();
         return $rs;
     }
-    public function getKartu($id){
+    public function getKartu($id)
+    {
         $sql = "SELECT * FROM kartu WHERE id = ?";
         $ps = $this->koneksi->prepare($sql);
         $ps->execute([$id]);
         $rs = $ps->fetch();
         return $rs;
     }
-    public function simpan($data){
+    public function simpan($data)
+    {
         $sql = "INSERT INTO kartu(kode, nama, diskon, iuran)
         VALUES (?,?,?,?)";
         $ps = $this->koneksi->prepare($sql);
         $ps->execute($data);
-        }
-        public function ubah(){
-            
+    }
+    public function ubah($data)
+    {
+        $sql = "UPDATE kartu SET kode=?, nama=?, diskon=?, iuran=?
+            WHERE id= ?";
+        $ps = $this->koneksi->prepare($sql);
+        $ps->execute($data);
+    }
+    public function hapus($id)
+    {
+        $sql = "DELETE FROM kartu WHERE id= ?";
+        $ps = $this->koneksi->prepare($sql);
+        $ps->execute([$id]);
     }
 }

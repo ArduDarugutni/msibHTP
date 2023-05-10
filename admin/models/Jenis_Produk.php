@@ -1,6 +1,5 @@
 <?php
-class JenisProduk
-{
+class JenisProduk{
     private $koneksi;
     public function __construct()
     {

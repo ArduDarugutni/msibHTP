@@ -24,17 +24,27 @@ $data = [
     $email,
     $alamat,
     $kartu_id
-    
+
 ];
 $model = new Pelanggan();
 $tombol = $_REQUEST['proses'];
-switch($tombol){
-    case 'simpan':$model->simpan($data); break;
-    case 'ubah':
-        $data[] = $_POST['idx']; $model->ubah($data); break;
-    default:
-    header('Location:index.php?url=pelanggan');
-}
-    header('Location:index.php?url=pelanggan'); 
 
-?>
+switch ($tombol) {
+    case 'simpan':
+        $model->simpan($data);
+        break;
+    case 'ubah':
+        $data[] = $_POST['idx'];
+        $model->ubah($data);
+        break;
+    case 'hapus':
+        unset($data);
+        //$data[] = $_POST['idx']; 
+        $model->hapus($_POST['idx']);
+        break;
+
+    default:
+        header('Location:index.php?url=pelanggan');
+        break;
+}
+header('Location:index.php?url=pelanggan');
